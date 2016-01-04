@@ -1,0 +1,20 @@
+<div ng-app="app">
+  <div ng-controller="exampleCtrl">
+    
+    <!-- <p>{{ message }}</p>
+    <input ng-model="message">
+    <p>{{ message_3}}</p>
+    <input ng-model="message_3">
+    <p>{{ message_4}}</p>
+    <input ng-model="message_4"> -->
+
+    <ul> <!--each through -->
+      <li ng-repeat="review in reviews"> {{review}} </li>
+    </ul>
+    <div>Add Review:
+    <input ng-model="newReview">
+    </div>
+    <button ng-click="addReview(newReview)">Add Review</button>
+
+  </div>
+</div>
